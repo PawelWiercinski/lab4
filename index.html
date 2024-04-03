@@ -14,13 +14,16 @@
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
 header {
 align-self: center;
 font-family: Garamond, serif;
 font-size: 18px;
-}
-h2{
-  font-size: 35px;
 }
 nav {
   background-color: #444;
@@ -36,26 +39,11 @@ nav a {
 section {
   padding: 2em;
 }
+h2{
+  font-size: xx-large;
+}
 p1{
-  font-size: 23px;
-}
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  width: 100%;
-}
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer li {
-  margin: 5px 0;
-}
-
-footer a {
-  color: white;
+  font-size: x-large;
 }
 /*---------------------------------------------------------------------------------------------------------------------------*/
 #atrakcje, #atrakcje1, #atrakcje2, #atrakcje3 {
@@ -67,7 +55,7 @@ footer a {
   border-bottom: 2px solid #333;
 }
 #atrakcje img, #atrakcje1 img, #atrakcje2 img, #atrakcje3 img {
-  max-width: 100%;
+  max-width: 650px;
   margin-left: 2%;
   margin-right: 20px;
   width: 650px;
@@ -89,7 +77,6 @@ footer a {
   padding: 60px;
 }
 #region img {
-  max-width: 100%;
   max-width: 450px;
   margin-right: 20px;
 }
@@ -111,6 +98,11 @@ footer a {
   border-bottom: 2px solid #333;
   margin-bottom: 5px;
   font-size: 18px;
+}
+
+.kosciol img {
+  max-width: 35%;
+  height: 400px;
 }
 /*---------------------------------------------------------------------------------------------------------------------------*/
 #przyroda1 {
@@ -152,13 +144,14 @@ footer a {
 #galeria img:hover{
   border: 3px solid hsl(0, 93%, 46%);
 }
+
   </style>
 </head>
 <body>
 	<header>
 		<h1>Uroki Brodnicy - Najciekawsze Miejsca do Odkrycia</h1>
 </header>
-<img id="slide" src="wieza.jpg">
+<img src="wieza.jpg">
 <nav>
 		<a href="#historia">Historia</a>
 		<a href="#region">O regionie</a>
@@ -267,9 +260,9 @@ footer a {
 				<a href="https://pl.wikipedia.org/wiki/Parafia_Jezusa_Mi%C5%82osiernego_w_Brodnicy" target=_blank>Parafia Jezusa Miłosiernego</a>
 				 &emsp;&emsp;&emsp;&emsp;&emsp; 
 				<a href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Niepokalanego_Pocz%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Brodnicy" target=_blank>Klasztor Franciszkanów</a></p>
-			<img src="image5.jpg" alt="Kościół św. Katarzyny" style= "max-width: 35%; height: 400px;">
-			<img src="image6.jpg" alt="Parafia Jezusa Miłosiernego w Brodnicy" style="max-width: 35%; height: 400px;">
-			<img src="image7.jpg" alt="Klasztor Franciszkanów" style="max-width: 35%; height: 400px;">
+			<img src="image5.jpg" alt="Kościół św. Katarzyny">
+			<img src="image6.jpg" alt="Parafia Jezusa Miłosiernego w Brodnicy">
+			<img src="image7.jpg" alt="Klasztor Franciszkanów">
 	</div>
 </section>
 
@@ -280,10 +273,11 @@ footer a {
 			Niewiele jest w Polsce tak atrakcyjnych terenów jak Pojezierze Brodnickie. O jego atrakcyjności decydują malownicze i o 
 			czystej wodzie jeziora, bujne, wielogatunkowe lasy, urozmaicona rzeźba terenu, bogate walory dóbr kultury oraz 
 			zagospodarowanie turystyczne. Powierzchnię Pojezierza Brodnickiego ukształtował ostatni lądolód zwany vistulianem około 17 
-			tys. lat temu. Rzeźba terenu charakteryzuje się urozmaiceniem, dynamiką i bogactwem form. Występuje tutaj ponad 100 jezior o powierzchni ponad 1 ha każde, a jeziorność obszaru wynosi ponad 
-			5%. W ogromnej większości są to układające się w ciąg jeziora rynnowe. Do największych jezior Pojezierza Brodnickiego należą 
-			Wielkie Partęczyny (324 ha), Skarlińskie (294 ha), Bachotek (211 ha), Sosno (188 ha), Płowęż (174 ha), Wądzyńskie (170 ha), 
-			Łąkorz (162 ha), Głowińskie (131 ha), Zbiczno (129 ha), Ciche (110 ha), Wysokie Brodno (91 ha), Niskie Brodno (87 ha).<br>
+			tys. lat temu. Rzeźba terenu charakteryzuje się urozmaiceniem, dynamiką i bogactwem form. Występuje tutaj ponad 100 jezior 
+      o powierzchni ponad 1 ha każde, a jeziorność obszaru wynosi ponad 5%. W ogromnej większości są to układające się w ciąg 
+      jeziora rynnowe. Do największych jezior Pojezierza Brodnickiego należą Wielkie Partęczyny (324 ha), Skarlińskie (294 ha), 
+      Bachotek (211 ha), Sosno (188 ha), Płowęż (174 ha), Wądzyńskie (170 ha), Łąkorz (162 ha), Głowińskie (131 ha), Zbiczno 
+      (129 ha), Ciche (110 ha), Wysokie Brodno (91 ha), Niskie Brodno (87 ha).<br>
 	</section>
 <section id="przyroda2">
 
