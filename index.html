@@ -7,30 +7,22 @@
   <style>
     body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #d8d1ba;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .body {
-    width: 100%;
-  }
-}
-header {
-align-self: center;
-font-family: Garamond, serif;
-font-size: 18px;
-}
-nav {
-  background-color: #444;
-  padding: 0.5em;
+  justify-content: center;
   text-align: center;
 }
-nav a {
+  header {
+  font-family: Garamond, serif;
+  font-size: larger;
+}
+  nav {
+  background-color: #444;
+  padding: 0.5em;
+}
+  nav a {
   color: #fff;
   text-decoration: none;
   padding: 0.5em 1em;
@@ -45,113 +37,51 @@ h2{
 p1{
   font-size: x-large;
 }
-/*---------------------------------------------------------------------------------------------------------------------------*/
-#atrakcje, #atrakcje1, #atrakcje2, #atrakcje3 {
+#atrakcje {
   display: flex;
   max-width: 95%;
 }
-#atrakcje3{
-  padding: 60px;
-  border-bottom: 2px solid #333;
-}
-#atrakcje img, #atrakcje1 img, #atrakcje2 img, #atrakcje3 img {
-  max-width: 650px;
-  margin-left: 2%;
-  margin-right: 20px;
+#atrakcje img{
+  max-width: 40%;
+  margin-left: 3%;
+  margin-right: 5%;
   width: 650px;
 }
-#atrakcje-text1, #atrakcje-text2, #atrakcje-text3, #atrakcje-text4 {
+.atrakcje-text {
   margin-right: 2%;
-  font-size: 18px;
+  font-size: large;
   width: 700px;
-  display: flex;       /* Ustawia kontener dla tekstu w trybie flexbox */
-  flex-direction: column; /* Ustawia kierunek flexbox na kolumnę */
   justify-content: center;
   text-align: center;
 }
-/*---------------------------------------------------------------------------------------------------------------------------*/
 #region {
   display: flex;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px;
+  max-width: 80%;
+  padding: 3%;
 }
 #region img {
-  max-width: 450px;
-  margin-right: 20px;
+  max-width: 35%;
+  margin-right: 12%;
 }
 #region-text {
-  font-size: 18px;
+  font-size: large;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-#region-text h1 {
-  text-align: center;
-}
-/*---------------------------------------------------------------------------------------------------------------------------*/
-#koscioly {
-  margin: 0 auto;
-  text-align: center;
-  padding: 60px;
-  border-bottom: 2px solid #333;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.kosciol img {
-  max-width: 35%;
-  height: 400px;
-}
-/*---------------------------------------------------------------------------------------------------------------------------*/
-#przyroda1 {
-  margin-top: 0;
-  max-width: 850px;
-  text-align: center;
-  justify-content: center;
-  font-size: 18px;
-  
-}
-#przyroda2{
-  padding: 1px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-#przyroda2 img{
-  width: 850px;
-  height: 450px;
-  margin-bottom: 35px;
-} 
-/*---------------------------------------------------------------------------------------------------------------------------*/
 #historia{
-  text-align: center;
-  justify-content: center;
-  font-size: 18px;
-  max-width: 730px;
+  font-size: large;
+  max-width: 50%;
   border-bottom: 2px solid #333;
 }
-#galeria{
-  text-align: center;
-}
-#galeria img{
-  max-width: 45%;
-  height: 400px;
-  padding: 1px;
-  border: 3px solid hsl(0,0%,60%);
-}
-#galeria img:hover{
-  border: 3px solid hsl(0, 93%, 46%);
-}
-
   </style>
 </head>
 <body>
 	<header>
 		<h1>Uroki Brodnicy - Najciekawsze Miejsca do Odkrycia</h1>
 </header>
-<img src="wieza.jpg">
+<img src="wieza.jpg" style=" width: 42%; max-width: 100%; height: auto;">
 <nav>
 		<a href="#historia">Historia</a>
 		<a href="#region">O regionie</a>
@@ -195,10 +125,10 @@ p1{
 	</div>
 </section>
 <br><br><br><br>
-	<h2 id="zabytek">Atrakcje i zabytki</h2>
+	<h2>Atrakcje i zabytki</h2>
 <section id="atrakcje">
 	<img src="Rynek.jpg">
-	<div id="atrakcje-text1">
+	<div class="atrakcje-text">
 		<p1><b>Ratusz w Brodnicy</b></p1>
 		<p>Ratusz w Brodnicy wzniesiono w końcu XIV wieku. W okresie 1598-1646 budynek służył m.in. 
 			jako siedziba zboru ewangelickiego. W roku 1631 w czasie wielkiego pożaru miasta ratusz został częściowo spalony, a 
@@ -210,9 +140,9 @@ p1{
 			blendami i wimpergami. Otoczona jest budynkami mieszkalno-usługowymi, położona w północnej pierzei trójkątnego rynku.</p>
 	</div>
 </section>
-<section id="atrakcje1">
+<section id="atrakcje">
 	<img src="image8.jpg">
-	<div id="atrakcje-text2">
+	<div class="atrakcje-text">
 		<p1><b>Pałac Anny Wazówny</b></p1>
 		<p>Pałac wzniesiony przed rokiem 1564 dla starosty brodnickiego z wykorzystaniem jednego z gotyckich budynków zamku w Brodnicy. 
 			W latach 1605-1625 mieszkała tu księżniczka Anna Wazówna, siostra króla polskiego Zygmunta III Wazy. W dwudziestoleciu 
@@ -223,9 +153,9 @@ p1{
 			Łyskowskiego oraz Informacji Turystycznej.</p>
 	</div>
 </section>
-<section id="atrakcje2">
+<section id="atrakcje">
 	<img src="image9.jpg">
-	<div id="atrakcje-text3">
+	<div class="atrakcje-text">
 		<p1><b>Zamek krzyżacki</b></p1>
 		<p>Murowany zamek powstał w pierwszej połowie XIV wieku, według niektórych w latach 1312-1330, według innych w latach 
 			1305-1317, a według T. Trupindy nie wcześniej niż w latach 30. XIV wieku. Na pewno w 1337 roku zamek był ukończony, 
@@ -238,9 +168,9 @@ p1{
 	</div>
 </section>
 
-<section id="atrakcje3">
+<section id="atrakcje">
 	<img src="image10.jpg">
-	<div id="atrakcje-text4">
+	<div class="atrakcje-text">
 		<p1><b>Brama Chełmińska</b></p1>
 		<p>Zachowana brama miejska Brodnicy z 1 poł. XIV wieku, obecnie siedziba Muzeum Regionalnego w Brodnicy. Jest to jedna z 
 			najokazalszych i najlepiej zachowanych w Polsce bram z czasów krzyżackich. Początek budowy Bramy Chełmińskiej w Brodnicy 
@@ -249,49 +179,6 @@ p1{
 			planie kwadratu, ze szczytami schodkowymi, ze sterczynami i półkoliście zamkniętymi tynkowanymi blendami. Brama posiada 
 			stropy drewniane, dach siodłowy z dachówką oraz zachował się fragment Szyi bramnej.</p>
 	</div>
-</section>
-
-<section id="koscioly">
-	<h2>Kościoły</h2>
-	<div class="kosciol">
-			<p><a href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Katarzyny_w_Brodnicy_(diecezja_toru%C5%84ska)" 
-				target=_blank	>
-				Kościół św. Katarzyny</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				<a href="https://pl.wikipedia.org/wiki/Parafia_Jezusa_Mi%C5%82osiernego_w_Brodnicy" target=_blank>Parafia Jezusa Miłosiernego</a>
-				 &emsp;&emsp;&emsp;&emsp;&emsp; 
-				<a href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Niepokalanego_Pocz%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Brodnicy" target=_blank>Klasztor Franciszkanów</a></p>
-			<img src="image5.jpg" alt="Kościół św. Katarzyny">
-			<img src="image6.jpg" alt="Parafia Jezusa Miłosiernego w Brodnicy">
-			<img src="image7.jpg" alt="Klasztor Franciszkanów">
-	</div>
-</section>
-
-<section id="przyroda1">
-	<h2>Przyroda i rekreacja</h2>
-		<p>Brodnica leży na obszarze Pojezierza Brodnickiego, co oznacza obfitość jezior, pagórkowate krajobrazy i urozmaicone formy 
-			terenu. W okolicy znajduje się wiele jezior, z których niektóre są otoczone lasami, co tworzy malownicze pejzaże.
-			Niewiele jest w Polsce tak atrakcyjnych terenów jak Pojezierze Brodnickie. O jego atrakcyjności decydują malownicze i o 
-			czystej wodzie jeziora, bujne, wielogatunkowe lasy, urozmaicona rzeźba terenu, bogate walory dóbr kultury oraz 
-			zagospodarowanie turystyczne. Powierzchnię Pojezierza Brodnickiego ukształtował ostatni lądolód zwany vistulianem około 17 
-			tys. lat temu. Rzeźba terenu charakteryzuje się urozmaiceniem, dynamiką i bogactwem form. Występuje tutaj ponad 100 jezior 
-      o powierzchni ponad 1 ha każde, a jeziorność obszaru wynosi ponad 5%. W ogromnej większości są to układające się w ciąg 
-      jeziora rynnowe. Do największych jezior Pojezierza Brodnickiego należą Wielkie Partęczyny (324 ha), Skarlińskie (294 ha), 
-      Bachotek (211 ha), Sosno (188 ha), Płowęż (174 ha), Wądzyńskie (170 ha), Łąkorz (162 ha), Głowińskie (131 ha), Zbiczno 
-      (129 ha), Ciche (110 ha), Wysokie Brodno (91 ha), Niskie Brodno (87 ha).<br>
-	</section>
-<section id="przyroda2">
-
-	<h1>Jezioro Niskie Brodno</h1><img src="image15.jpg">
-	<h1>Jezioro Bachotek</h1><img src="image16.jpg">
-
-</section>
-
-<section id="galeria">
-<h2>Galeria</h2>
-<img src="image12.jpg">
-<img src="image17.jpg">
-<img src="image14.jpg">
-<img src="image13.jpg">
 </section>
 </body>
 </html>
